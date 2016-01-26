@@ -1,0 +1,35 @@
+﻿Build started 12/1/2015 10:16:09 PM.
+     1>Project "C:\Users\Mathieu\comp-345-risk-fall-2k15\RiskVisualStudioProject\RiskVisualStudioProject\RiskVisualStudioProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Mathieu\comp-345-risk-fall-2k15\RiskVisualStudioProject\RiskVisualStudioProject\\..\..\dependencies\includes" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\model\AttackPhase.cpp ..\..\model\Country.cpp ..\..\model\Director.cpp ..\..\model\FortificationPhase.cpp ..\..\model\RiskGame.cpp ..\..\model\main.cpp ..\..\model\Player.cpp ..\..\model\PlayerList.cpp ..\..\model\ReinforcementPhase.cpp ..\..\model\StartupPhase.cpp ..\..\model\World.cpp
+         ReinforcementPhase.cpp
+         Player.cpp
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(70): error C2039: 'cin': is not a member of 'std'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\fstream(13): note: see declaration of 'std'
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(70): error C2065: 'cin': undeclared identifier
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(70): error C2228: left of '.clear' must have class/struct/union
+         c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(70): note: type is 'unknown-type'
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(71): error C2039: 'cin': is not a member of 'std'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\fstream(13): note: see declaration of 'std'
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(71): error C2065: 'cin': undeclared identifier
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(71): error C2228: left of '.ignore' must have class/struct/union
+         c:\users\mathieu\comp-345-risk-fall-2k15\model\utilities.h(71): note: type is 'unknown-type'
+         main.cpp
+         RiskGame.cpp
+         Director.cpp
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\director.cpp(12): error C2660: 'Builder::GetPlayers': function does not take 0 arguments
+     1>c:\users\mathieu\comp-345-risk-fall-2k15\model\director.cpp(13): error C2660: 'Builder::GetWorld': function does not take 0 arguments
+         AttackPhase.cpp
+         Generating Code...
+         Compiling...
+         World.cpp
+         StartupPhase.cpp
+         PlayerList.cpp
+         FortificationPhase.cpp
+         Country.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\Mathieu\comp-345-risk-fall-2k15\RiskVisualStudioProject\RiskVisualStudioProject\RiskVisualStudioProject.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:11.35

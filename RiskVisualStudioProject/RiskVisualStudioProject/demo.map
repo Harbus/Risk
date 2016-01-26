@@ -1,0 +1,90 @@
+continent "North America" 9
+continent "South America" 4
+continent "Europe" 7
+continent "Africa" 6
+continent "Asia" 12
+continent "Australia" 4
+country "Alaska" "North America"
+country "Northwest Territory" "North America"
+country "Alberta" "North America"
+country "Ontario" "North America"
+country "Greenland" "North America"
+country "Eastern Canada" "North America"
+country "Eastern United States" "North America"
+country "Western United States" "North America"
+country "Central America" "North America"
+country "Venezuela" "South America"
+country "Brazil" "South America"
+country "Peru" "South America"
+country "Argentina" "South America"
+country "Iceland" "Europe"
+country "Great Britain" "Europe"
+country "Scandinavia" "Europe"
+country "Western Europe" "Europe"
+country "Northern Europe" "Europe"
+country "Southrern Europe" "Europe"
+country "Russia" "Europe"
+country "North Africa" "Africa"
+country "Egypt" "Africa"
+country "East Africa" "Africa"
+country "Central Africa" "Africa"
+country "South Africa" "Africa"
+country "Madagascar" "Africa"
+country "Middle East" "Asia"
+country "Afghanistan" "Asia"
+country "Ural" "Asia"
+country "Siberia" "Asia"
+country "Yakutsk" "Asia"
+country "Kamchatka" "Asia"
+country "Irkutsk" "Asia"
+country "Mongolia" "Asia"
+country "Japan" "Asia"
+country "China" "Asia"
+country "India" "Asia"
+country "Southeast Asia" "Asia"
+country "Indonesia" "Australia"
+country "New Guinea" "Australia"
+country "Western Australia" "Australia"
+country "Eastern Australia" "Australia"
+connection "Alaska" [Northwest Territory,Alberta,Kamchatka,]
+connection "Northwest Territory" [Alaska,Alberta,Ontario,Greenland,]
+connection "Alberta" [Alaska,Northwest Territory,Ontario,Western United States,]
+connection "Ontario" [Northwest Territory,Alberta,Greenland,Eastern Canada,Eastern United States,Western United States,]
+connection "Greenland" [Northwest Territory,Ontario,Eastern Canada,Iceland,]
+connection "Eastern Canada" [Ontario,Greenland,Eastern United States,]
+connection "Eastern United States" [Ontario,Eastern Canada,Western United States,Central America,]
+connection "Western United States" [Alberta,Ontario,Eastern United States,Central America,]
+connection "Central America" [Eastern United States,Western United States,Venezuela,]
+connection "Venezuela" [Central America,Peru,Brazil,]
+connection "Brazil" [Venezuela,Peru,Argentina,North Africa,]
+connection "Peru" [Venezuela,Brazil,Argentina,]
+connection "Argentina" [Brazil,Peru,]
+connection "Iceland" [Greenland,Great Britain,Scandinavia,]
+connection "Great Britain" [Iceland,Scandinavia,Western Europe,Northern Europe,]
+connection "Scandinavia" [Iceland,Great Britain,Russia,Northern Europe,]
+connection "Western Europe" [Great Britain,Southrern Europe,Northern Europe,North Africa,]
+connection "Northern Europe" [Great Britain,Scandinavia,Western Europe,Southrern Europe,Russia,]
+connection "Southrern Europe" [Western Europe,Northern Europe,Russia,North Africa,Egypt,Middle East,]
+connection "Russia" [Scandinavia,Northern Europe,Southrern Europe,Middle East,Afghanistan,Ural,]
+connection "North Africa" [Brazil,Western Europe,Southrern Europe,Egypt,Central Africa,East Africa,]
+connection "Egypt" [Southrern Europe,North Africa,East Africa,]
+connection "East Africa" [North Africa,Egypt,Central Africa,Madagascar,South Africa,Middle East,]
+connection "Central Africa" [North Africa,East Africa,South Africa,]
+connection "South Africa" [East Africa,Central Africa,Madagascar,]
+connection "Madagascar" [East Africa,South Africa,]
+connection "Middle East" [Southrern Europe,Russia,East Africa,Afghanistan,India,]
+connection "Afghanistan" [Russia,Middle East,India,Ural,China,]
+connection "Ural" [Russia,Afghanistan,China,Siberia,]
+connection "Siberia" [Ural,Yakutsk,China,Irkutsk,Mongolia,]
+connection "Yakutsk" [Siberia,Kamchatka,Irkutsk,]
+connection "Kamchatka" [Alaska,Yakutsk,Irkutsk,Japan,Mongolia,]
+connection "Irkutsk" [Siberia,Yakutsk,Kamchatka,Mongolia,]
+connection "Mongolia" [Siberia,Kamchatka,Irkutsk,Japan,China,]
+connection "Japan" [Kamchatka,Mongolia,]
+connection "China" [Afghanistan,Ural,Siberia,Mongolia,Southeast Asia,]
+connection "India" [Middle East,Afghanistan,]
+connection "Southeast Asia" [China,Indonesia,]
+connection "Indonesia" [Southeast Asia,New Guinea,Western Australia,]
+connection "New Guinea" [Indonesia,Western Australia,Eastern Australia,]
+connection "Western Australia" [Indonesia,New Guinea,Eastern Australia,]
+connection "Eastern Australia" [New Guinea,Western Australia,]

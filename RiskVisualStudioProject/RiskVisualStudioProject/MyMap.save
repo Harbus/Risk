@@ -1,0 +1,95 @@
+[Players]
+"Player 1" 0 [0,0,0,1]
+"Player 2" 1 [0,0,0,0]
+"Player 3" 0 [0,0,0,0]
+[World] 0 [12,12,12,1]
+continent "North America" 9
+continent "South America" 4
+continent "Europe" 7
+continent "Africa" 6
+continent "Asia" 12
+continent "Australia" 4
+country "Alaska" "North America" "Player 2" 2
+country "Northwest Territory" "North America" "Player 2" 2
+country "Alberta" "North America" "Player 1" 2
+country "Ontario" "North America" "Player 2" 2
+country "Greenland" "North America" "Player 3" 2
+country "Eastern Canada" "North America" "Player 2" 2
+country "Eastern United States" "North America" "Player 3" 2
+country "Western United States" "North America" "Player 2" 2
+country "Central America" "North America" "Player 3" 2
+country "Venezuela" "South America" "Player 3" 2
+country "Brazil" "South America" "Player 1" 4
+country "Peru" "South America" "Player 1" 2
+country "Argentina" "South America" "Player 1" 1
+country "Iceland" "Europe" "Player 3" 2
+country "Great Britain" "Europe" "Player 3" 2
+country "Scandinavia" "Europe" "Player 1" 2
+country "Western Europe" "Europe" "Player 1" 2
+country "Northern Europe" "Europe" "Player 2" 2
+country "Southrern Europe" "Europe" "Player 2" 2
+country "Russia" "Europe" "Player 1" 2
+country "North Africa" "Africa" "Player 1" 2
+country "Egypt" "Africa" "Player 2" 2
+country "East Africa" "Africa" "Player 2" 2
+country "Central Africa" "Africa" "Player 3" 2
+country "South Africa" "Africa" "Player 1" 2
+country "Madagascar" "Africa" "Player 1" 2
+country "Middle East" "Asia" "Player 2" 2
+country "Afghanistan" "Asia" "Player 3" 2
+country "Ural" "Asia" "Player 3" 2
+country "Siberia" "Asia" "Player 3" 2
+country "Yakutsk" "Asia" "Player 1" 2
+country "Kamchatka" "Asia" "Player 2" 2
+country "Irkutsk" "Asia" "Player 1" 2
+country "Mongolia" "Asia" "Player 1" 2
+country "Japan" "Asia" "Player 3" 2
+country "China" "Asia" "Player 1" 2
+country "India" "Asia" "Player 1" 2
+country "Southeast Asia" "Asia" "Player 3" 2
+country "Indonesia" "Australia" "Player 2" 2
+country "New Guinea" "Australia" "Player 3" 2
+country "Western Australia" "Australia" "Player 2" 2
+country "Eastern Australia" "Australia" "Player 3" 2
+connection "Alaska" [Northwest Territory,Alberta,Kamchatka,]
+connection "Northwest Territory" [Alaska,Alberta,Ontario,Greenland,]
+connection "Alberta" [Alaska,Northwest Territory,Ontario,Western United States,]
+connection "Ontario" [Northwest Territory,Alberta,Greenland,Eastern Canada,Eastern United States,Western United States,]
+connection "Greenland" [Northwest Territory,Ontario,Eastern Canada,Iceland,]
+connection "Eastern Canada" [Ontario,Greenland,Eastern United States,]
+connection "Eastern United States" [Ontario,Eastern Canada,Western United States,Central America,]
+connection "Western United States" [Alberta,Ontario,Eastern United States,Central America,]
+connection "Central America" [Eastern United States,Western United States,Venezuela,]
+connection "Venezuela" [Central America,Peru,Brazil,]
+connection "Brazil" [Venezuela,Peru,Argentina,North Africa,]
+connection "Peru" [Venezuela,Brazil,Argentina,]
+connection "Argentina" [Brazil,Peru,]
+connection "Iceland" [Greenland,Great Britain,Scandinavia,]
+connection "Great Britain" [Iceland,Scandinavia,Western Europe,Northern Europe,]
+connection "Scandinavia" [Iceland,Great Britain,Russia,Northern Europe,]
+connection "Western Europe" [Great Britain,Southrern Europe,Northern Europe,North Africa,]
+connection "Northern Europe" [Great Britain,Scandinavia,Western Europe,Southrern Europe,Russia,]
+connection "Southrern Europe" [Western Europe,Northern Europe,Russia,North Africa,Egypt,Middle East,]
+connection "Russia" [Scandinavia,Northern Europe,Southrern Europe,Middle East,Afghanistan,Ural,]
+connection "North Africa" [Brazil,Western Europe,Southrern Europe,Egypt,Central Africa,East Africa,]
+connection "Egypt" [Southrern Europe,North Africa,East Africa,]
+connection "East Africa" [North Africa,Egypt,Central Africa,Madagascar,South Africa,Middle East,]
+connection "Central Africa" [North Africa,East Africa,South Africa,]
+connection "South Africa" [East Africa,Central Africa,Madagascar,]
+connection "Madagascar" [East Africa,South Africa,]
+connection "Middle East" [Southrern Europe,Russia,East Africa,Afghanistan,India,]
+connection "Afghanistan" [Russia,Middle East,India,Ural,China,]
+connection "Ural" [Russia,Afghanistan,China,Siberia,]
+connection "Siberia" [Ural,Yakutsk,China,Irkutsk,Mongolia,]
+connection "Yakutsk" [Siberia,Kamchatka,Irkutsk,]
+connection "Kamchatka" [Alaska,Yakutsk,Irkutsk,Japan,Mongolia,]
+connection "Irkutsk" [Siberia,Yakutsk,Kamchatka,Mongolia,]
+connection "Mongolia" [Siberia,Kamchatka,Irkutsk,Japan,China,]
+connection "Japan" [Kamchatka,Mongolia,]
+connection "China" [Afghanistan,Ural,Siberia,Mongolia,Southeast Asia,]
+connection "India" [Middle East,Afghanistan,]
+connection "Southeast Asia" [China,Indonesia,]
+connection "Indonesia" [Southeast Asia,New Guinea,Western Australia,]
+connection "New Guinea" [Indonesia,Western Australia,Eastern Australia,]
+connection "Western Australia" [Indonesia,New Guinea,Eastern Australia,]
+connection "Eastern Australia" [New Guinea,Western Australia,]

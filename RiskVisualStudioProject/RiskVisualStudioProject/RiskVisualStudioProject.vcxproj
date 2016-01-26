@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AD2E2568-25A0-4B16-B3BB-3E0BAD492FD9}</ProjectGuid>
+    <RootNamespace>RiskVisualStudioProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\dependencies\includes</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\dependencies\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;jpeg.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\dependencies\includes</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\dependencies\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-window-d.lib;jpeg.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;sfgui-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\dependencies\includes</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\dependencies\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-window.lib;jpeg.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\dependencies\includes</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\dependencies\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-window.lib;jpeg.lib;freetype.lib;opengl32.lib;winmm.lib;gdi32.lib;sfgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\model\AttackPhase.cpp" />
+    <ClCompile Include="..\..\model\BasicStatistics.cpp" />
+    <ClCompile Include="..\..\model\BattlePercentageStatistics.cpp" />
+    <ClCompile Include="..\..\model\Continent.cpp" />
+    <ClCompile Include="..\..\model\Country.cpp" />
+    <ClCompile Include="..\..\model\Director.cpp" />
+    <ClCompile Include="..\..\model\FortificationPhase.cpp" />
+    <ClCompile Include="..\..\model\GameBuilder.cpp" />
+    <ClCompile Include="..\..\model\RiskGame.cpp" />
+    <ClCompile Include="..\..\model\main.cpp" />
+    <ClCompile Include="..\..\model\Phase.cpp" />
+    <ClCompile Include="..\..\model\Player.cpp" />
+    <ClCompile Include="..\..\model\PlayerList.cpp" />
+    <ClCompile Include="..\..\model\ReinforcementPhase.cpp" />
+    <ClCompile Include="..\..\model\StartupPhase.cpp" />
+    <ClCompile Include="..\..\model\Statistics.cpp" />
+    <ClCompile Include="..\..\model\Subject.cpp" />
+    <ClCompile Include="..\..\model\World.cpp" />
+    <ClCompile Include="..\..\model\WorldControlledPercentageStatistics.cpp" />
+    <ClCompile Include="..\..\view\CountryCreationTool.cpp" />
+    <ClCompile Include="..\..\view\MainMenuScreen.cpp" />
+    <ClCompile Include="..\..\view\MapEditorScreen.cpp" />
+    <ClCompile Include="..\..\view\PlayMenuScreen.cpp" />
+    <ClCompile Include="..\..\view\RiskGameView.cpp" />
+    <ClCompile Include="..\..\view\Screen.cpp" />
+    <ClCompile Include="..\..\view\SelectionTool.cpp" />
+    <ClCompile Include="..\..\view\GameDisplayScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\model\AttackPhase.h" />
+    <ClInclude Include="..\..\model\BasicStatistics.h" />
+    <ClInclude Include="..\..\model\BattlePercentageStatistics.h" />
+    <ClInclude Include="..\..\model\Builder.h" />
+    <ClInclude Include="..\..\model\Continent.h" />
+    <ClInclude Include="..\..\model\Country.h" />
+    <ClInclude Include="..\..\model\Dice.h" />
+    <ClInclude Include="..\..\model\Director.h" />
+    <ClInclude Include="..\..\model\GameBuilder.h" />
+    <ClInclude Include="..\..\model\Observer.h" />
+    <ClInclude Include="..\..\model\Statistics.h" />
+    <ClInclude Include="..\..\model\Subject.h" />
+    <ClInclude Include="..\..\model\Utilities.h" />
+    <ClInclude Include="..\..\model\FortificationPhase.h" />
+    <ClInclude Include="..\..\model\RiskGame.h" />
+    <ClInclude Include="..\..\model\Phase.h" />
+    <ClInclude Include="..\..\model\Player.h" />
+    <ClInclude Include="..\..\model\PlayerList.h" />
+    <ClInclude Include="..\..\model\ReinforcementPhase.h" />
+    <ClInclude Include="..\..\model\StartupPhase.h" />
+    <ClInclude Include="..\..\model\World.h" />
+    <ClInclude Include="..\..\model\WorldControlledPercentageStatistics.h" />
+    <ClInclude Include="..\..\view\CountryCreationTool.h" />
+    <ClInclude Include="..\..\view\MainMenuScreen.h" />
+    <ClInclude Include="..\..\view\MapEditorScreen.h" />
+    <ClInclude Include="..\..\view\PlayMenuScreen.h" />
+    <ClInclude Include="..\..\view\RiskGameView.h" />
+    <ClInclude Include="..\..\view\Screen.h" />
+    <ClInclude Include="..\..\view\SelectionTool.h" />
+    <ClInclude Include="..\..\view\GameDisplayScreen.h" />
+    <ClInclude Include="..\..\view\Tool.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

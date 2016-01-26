@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\model\AttackPhase.cpp">
+      <Filter>Model\Phase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\ReinforcementPhase.cpp">
+      <Filter>Model\Phase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\StartupPhase.cpp">
+      <Filter>Model\Phase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Phase.cpp">
+      <Filter>Model\Phase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\FortificationPhase.cpp">
+      <Filter>Model\Phase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Continent.cpp">
+      <Filter>Model\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Country.cpp">
+      <Filter>Model\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\World.cpp">
+      <Filter>Model\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\PlayerList.cpp">
+      <Filter>Model\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Player.cpp">
+      <Filter>Model\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\RiskGame.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\main.cpp" />
+    <ClCompile Include="..\..\view\RiskGameView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\MainMenuScreen.cpp">
+      <Filter>View\Screen\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\PlayMenuScreen.cpp">
+      <Filter>View\Screen\PlayMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\MapEditorScreen.cpp">
+      <Filter>View\Screen\MapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\SelectionTool.cpp">
+      <Filter>View\Screen\MapEditor\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\CountryCreationTool.cpp">
+      <Filter>View\Screen\MapEditor\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\Screen.cpp">
+      <Filter>View\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Director.cpp">
+      <Filter>Model\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\GameBuilder.cpp">
+      <Filter>Model\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Subject.cpp">
+      <Filter>Model\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\BasicStatistics.cpp">
+      <Filter>Model\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\BattlePercentageStatistics.cpp">
+      <Filter>Model\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\Statistics.cpp">
+      <Filter>Model\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\model\WorldControlledPercentageStatistics.cpp">
+      <Filter>Model\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\view\GameDisplayScreen.cpp">
+      <Filter>View\Screen\GameDisplay</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\model\AttackPhase.h">
+      <Filter>Model\Phase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\ReinforcementPhase.h">
+      <Filter>Model\Phase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\StartupPhase.h">
+      <Filter>Model\Phase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Phase.h">
+      <Filter>Model\Phase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\FortificationPhase.h">
+      <Filter>Model\Phase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Continent.h">
+      <Filter>Model\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Country.h">
+      <Filter>Model\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\World.h">
+      <Filter>Model\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\PlayerList.h">
+      <Filter>Model\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Player.h">
+      <Filter>Model\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Utilities.h">
+      <Filter>Model\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Dice.h">
+      <Filter>Model\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\RiskGame.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\RiskGameView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\MainMenuScreen.h">
+      <Filter>View\Screen\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\PlayMenuScreen.h">
+      <Filter>View\Screen\PlayMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\MapEditorScreen.h">
+      <Filter>View\Screen\MapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\Tool.h">
+      <Filter>View\Screen\MapEditor\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\SelectionTool.h">
+      <Filter>View\Screen\MapEditor\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\CountryCreationTool.h">
+      <Filter>View\Screen\MapEditor\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\Screen.h">
+      <Filter>View\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Builder.h">
+      <Filter>Model\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Director.h">
+      <Filter>Model\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\GameBuilder.h">
+      <Filter>Model\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Observer.h">
+      <Filter>Model\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Subject.h">
+      <Filter>Model\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\BasicStatistics.h">
+      <Filter>Model\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\BattlePercentageStatistics.h">
+      <Filter>Model\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\Statistics.h">
+      <Filter>Model\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\model\WorldControlledPercentageStatistics.h">
+      <Filter>Model\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\view\GameDisplayScreen.h">
+      <Filter>View\Screen\GameDisplay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Model">
+      <UniqueIdentifier>{262fc872-0323-40e4-b9b1-af28080deebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Utilities">
+      <UniqueIdentifier>{c77386e3-c061-49be-84dd-8a90a867d37e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Phase">
+      <UniqueIdentifier>{6c1fb3cf-3c0d-4000-a336-e3d322e9dae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Player">
+      <UniqueIdentifier>{b5b527e2-7f8d-4b38-a1c5-f659ebd538e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\World">
+      <UniqueIdentifier>{cfb4cc00-880c-4787-b646-c02dbf3f26bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{fbcf0400-41c8-405b-bd7c-d3f703c23886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Screen">
+      <UniqueIdentifier>{770a7f22-341f-45c7-b041-d534c39a55e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Screen\PlayMenu">
+      <UniqueIdentifier>{a593eca9-76e9-409a-ae41-86b685f88e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Screen\MapEditor">
+      <UniqueIdentifier>{daeded34-7571-4d00-aa5f-f278bfe21ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Screen\MapEditor\Tool">
+      <UniqueIdentifier>{f53887f1-082b-40db-b4d5-8bdc11ff3c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Screen\MainMenu">
+      <UniqueIdentifier>{b3f9ed56-de72-4f2c-a370-8ba8519ca0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Builder">
+      <UniqueIdentifier>{d9555e8e-7bcc-4b28-a143-9e5c584c08d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Bridge">
+      <UniqueIdentifier>{09dff1f3-c9e7-471d-a5e3-f7a5a6bdbd11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model\Statistics">
+      <UniqueIdentifier>{17dfba74-68ec-4cb4-9fc8-2ad8a0756719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View\Screen\GameDisplay">
+      <UniqueIdentifier>{b593c76b-a9b4-40b7-be0b-ea44664b03b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
